@@ -8,7 +8,7 @@ const Nav = () => {
   return (
     <StyledNav>
       <h1>
-        <Link to="/" id="logo">
+        <Link to="/portfolio/" id="logo">
           Saar Cohen
         </Link>
       </h1>
@@ -22,6 +22,14 @@ const Nav = () => {
           />
         </li>
         <li>
+          <Link to="/portfolio/Skills">Skills</Link>
+          <Line
+            transition={{ duration: 0.75 }}
+            initial={{ width: "0%" }}
+            animate={{ width: pathname === "/portfolio/Skills" ? "50%" : "0%" }}
+          />
+        </li>
+        <li>
           <Link to="/portfolio/Projects">Projects</Link>
           <Line
             transition={{ duration: 0.75 }}
@@ -29,14 +37,6 @@ const Nav = () => {
             animate={{
               width: pathname === "/portfolio/Projects" ? "50%" : "0%",
             }}
-          />
-        </li>
-        <li>
-          <Link to="/portfolio/Skills">Skills</Link>
-          <Line
-            transition={{ duration: 0.75 }}
-            initial={{ width: "0%" }}
-            animate={{ width: pathname === "/portfolio/Skills" ? "50%" : "0%" }}
           />
         </li>
       </ul>
@@ -87,17 +87,40 @@ const StyledNav = styled.nav`
       margin: 2rem;
     }
   }
+  @media (max-width: 768px) {
+    flex-direction: column;
+    margin: 0;
+    padding: 1rem 1.5rem;
+    justify-content: space-between;
+    ul {
+      text-align: center;
+      display: flex;
+      /* flex-direction: column; */
+      margin: 0;
+      padding: 0;
+      justify-content: center;
+    }
+    li {
+      padding: 1rem;
+    }
+    #logo {
+      font-size: 2.5rem;
+    }
+  }
 `;
 
 const Line = styled(motion.div)`
   height: 0.3rem;
-  background-color: #618ce9;
+  background-color: #3b77f9;
   width: 0%;
   position: absolute;
   bottom: -80%;
   left: 60%;
   @media (max-width: 1300px) {
     left: 0;
+  }
+  @media (max-width: 768px) {
+    display: none;
   }
 `;
 export default Nav;
