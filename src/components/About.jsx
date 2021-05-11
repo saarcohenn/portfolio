@@ -1,13 +1,13 @@
 import React from "react";
 import profile from "../img/saar-profile.JPG";
-import styled from "styled-components";
 import Typical from "react-typical";
+import styled from "styled-components";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 const About = () => {
   return (
-    <SyledAbout>
+    <StyledAbout>
       <motion.img src={profile} alt="profile" whileHover={{ scale: 1.1 }} />
       <p className="intro">Hi there 👋🏻,</p>
       <h2 className="subtitle">
@@ -58,13 +58,13 @@ const About = () => {
       </div>
 
       <motion.button className="skills-btn">
-        <Link to="/portfolio/Skills">Continue To Skills -></Link>
+        <Link to="/portfolio/Skills">Continue To Skills {"->"}</Link>
       </motion.button>
-    </SyledAbout>
+    </StyledAbout>
   );
 };
 
-const SyledAbout = styled.div`
+const StyledAbout = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
