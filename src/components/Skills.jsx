@@ -97,7 +97,7 @@ const StyledSkills = styled.div`
     }
     .about-btn {
       position: absolute;
-      left: 5vw;
+      left: 5.2vw;
     }
     .projects-btn {
       position: absolute;

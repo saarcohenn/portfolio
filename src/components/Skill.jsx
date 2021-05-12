@@ -4,9 +4,6 @@ import { motion } from "framer-motion";
 import { Icon } from "./Icon";
 
 const Skill = ({ color, name, exp, className }) => {
-  const variants = {
-    open: {},
-  };
   return (
     <StyledSkill className={className} whileHover={{ height: "100px" }}>
       {/* <p style={{ fill: "red", height: "2rem" }}>
