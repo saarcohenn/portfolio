@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.52ce963c.chunk.css",
-    "main.js": "/portfolio/static/js/main.7687c953.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.7687c953.chunk.js.map",
-    "runtime-main.js": "/portfolio/static/js/runtime-main.0eee477e.js",
-    "runtime-main.js.map": "/portfolio/static/js/runtime-main.0eee477e.js.map",
-    "static/js/2.b615e053.chunk.js": "/portfolio/static/js/2.b615e053.chunk.js",
-    "static/js/2.b615e053.chunk.js.map": "/portfolio/static/js/2.b615e053.chunk.js.map",
-    "static/js/3.7a05c786.chunk.js": "/portfolio/static/js/3.7a05c786.chunk.js",
-    "static/js/3.7a05c786.chunk.js.map": "/portfolio/static/js/3.7a05c786.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.c5b4dbf6.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.c5b4dbf6.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.98fdf70e.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.98fdf70e.js.map",
+    "static/js/2.19139507.chunk.js": "/portfolio/static/js/2.19139507.chunk.js",
+    "static/js/2.19139507.chunk.js.map": "/portfolio/static/js/2.19139507.chunk.js.map",
+    "static/js/3.a76a9bb1.chunk.js": "/portfolio/static/js/3.a76a9bb1.chunk.js",
+    "static/js/3.a76a9bb1.chunk.js.map": "/portfolio/static/js/3.a76a9bb1.chunk.js.map",
     "index.html": "/portfolio/index.html",
     "static/css/main.52ce963c.chunk.css.map": "/portfolio/static/css/main.52ce963c.chunk.css.map",
-    "static/js/2.b615e053.chunk.js.LICENSE.txt": "/portfolio/static/js/2.b615e053.chunk.js.LICENSE.txt",
+    "static/js/2.19139507.chunk.js.LICENSE.txt": "/portfolio/static/js/2.19139507.chunk.js.LICENSE.txt",
     "static/media/FramerMotion.758dfa94.png": "/portfolio/static/media/FramerMotion.758dfa94.png",
     "static/media/budget-1.4e1d41c8.png": "/portfolio/static/media/budget-1.4e1d41c8.png",
     "static/media/budget-2.ca10ef98.png": "/portfolio/static/media/budget-2.ca10ef98.png",
@@ -29,9 +29,9 @@
     "static/media/waves-4.9b7f75a0.png": "/portfolio/static/media/waves-4.9b7f75a0.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.0eee477e.js",
-    "static/js/2.b615e053.chunk.js",
+    "static/js/runtime-main.98fdf70e.js",
+    "static/js/2.19139507.chunk.js",
     "static/css/main.52ce963c.chunk.css",
-    "static/js/main.7687c953.chunk.js"
+    "static/js/main.c5b4dbf6.chunk.js"
   ]
 }
