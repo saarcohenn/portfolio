@@ -15,13 +15,23 @@ const Footer = () => {
     return <a href={`mailto:${email}${params}`}>{children}</a>;
   };
 
+  const LinkedIn = ({ children }) => {
+    return <a href="https://www.linkedin.com/in/saohen/">{children}</a>;
+  };
+
+  const GitHub = ({ children }) => {
+    return <a href="https://www.github.com/saarcohenn/">{children}</a>;
+  };
+
   return (
     <StyledFooter>
       <h2 className="footer-title">Contact me here:</h2>
       <div className="connections">
-        <IconButton>
-          <LinkedInIcon fontSize="large" />
-        </IconButton>
+        <LinkedIn>
+          <IconButton>
+            <LinkedInIcon fontSize="large" />
+          </IconButton>
+        </LinkedIn>
         <Mailto
           email="saar.cohenn@gmail.com"
           subject="Hi Saar | ContactMe "
@@ -31,9 +41,11 @@ const Footer = () => {
             <EmailIcon fontSize="large" />
           </IconButton>
         </Mailto>
-        <IconButton>
-          <GitHubIcon fontSize="large" />
-        </IconButton>
+        <GitHub>
+          <IconButton>
+            <GitHubIcon fontSize="large" />
+          </IconButton>
+        </GitHub>
       </div>
     </StyledFooter>
   );
