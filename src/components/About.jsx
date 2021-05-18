@@ -9,13 +9,15 @@ const About = () => {
   return (
     <StyledAbout>
       <motion.img src={profile} alt="profile" whileHover={{ scale: 1.1 }} />
-      <p className="intro">Hi there 👋🏻,</p>
-      <h2 className="subtitle">
-        Let me tell you <span>about myself...</span>
-      </h2>
+      <div className="intro">
+        <h1 className="title">Hi there 👋🏻,</h1>
+        <h2 className="subtitle">
+          Let Me Tell You <span>About Myself...</span>
+        </h2>
+      </div>
       <div className="my-story">
         <p className="first">
-          My name is Saar. I am a <br />
+          My name is Saar Cohen. I am a <br />
           <Typical
             className="typical"
             loop={Infinity}
@@ -32,29 +34,81 @@ const About = () => {
             ]}
           />
         </p>
-        <p className="paragraph">
-          <span>
-            I have been a Chip Validation Engineer at Marvell IL for the last 2
-            years.{" "}
-          </span>
-          I have designed and developed engineering studies of the company
-          products relying on company documents. Experienced with writing
-          automated tests and test plans. Methodological and have a deep
-          realization of the importance of quality in software development.
-          Possessing knowledge in Networking protocols such as TCP/IP, REST API
-          and Web Sockets.
-        </p>
-        <p className="paragraph">
-          <span>
-            My next goal is to become a full stack developer and a
-            data-scientist.{" "}
-          </span>
-          I am a highly motivated, easy & self-learner, team player, out of the
-          box thinking person, and love complex logic puzzles. I have been
-          starting to study the fields of Data-Science. I believe I will
-          continue my academic education pursuing my Master's Degree, and become
-          a Data-Scientist soon enough 😁.
-        </p>
+        <div className="experience">
+          <h3>Experience</h3>
+          <p className="paragraph">
+            <span>Chip Validation Engineer at Marvell Inc. </span>
+            <p className="years">Jul 2019 - Dec 2020</p>
+            <ul className="bullet-list">
+              <li>
+                Designed and developed engineering studies of Marvell
+                Documentation and Products
+              </li>
+              <li>Writing test plans</li>
+              <li>Writing Python and Linux Bash automated tests.</li>
+              <li>Methodological, Organized Person & Out-Of-The-Box Thinker</li>
+              <li>Deep knowlege in the fields of Networking</li>
+              <li>REST API, TCP/IP & Web-Sockets</li>
+              <li>SSH, Telnet & Serial-Connection</li>
+            </ul>
+          </p>
+        </div>
+        <div className="education">
+          <h3>Education</h3>
+          <div className="paragraph">
+            <span>
+              B.Sc. in Computer Science - Holon Institute of Technologies
+            </span>
+            <p className="years">2016-2019</p>
+            <p className="gpa">
+              Graduated with <span>GPA: 90</span>
+            </p>
+            <ul className="bullet-list">
+              <li>
+                Developed .Net Framwork, Entity Framework & WPF apps and games
+                with C#
+              </li>
+              <li>Program languages: C, C++, C#, Java and JavaScript</li>
+              <li>Courses: Algoritms, Data Structure, Graph Theory, SQL</li>
+            </ul>
+          </div>
+        </div>
+        <div className="military-service">
+          <h3>Military Service</h3>
+          <div className="paragraph">
+            <span>Project Manager & System Admin - 8200</span>
+            <div className="years">Mar 2012 - Mar 2015</div>
+            <ul className="bullet-list">
+              <li>Create project documentation and strategy plans</li>
+              <li>
+                Account for complete project lifecycle from inception to closure
+              </li>
+              <li>
+                Collaborate with participants to determine project timeline
+              </li>
+              <li>In charge of team's tasks, work-plans, and training</li>
+              <li>Cisco's Call Manager & UCCX Platform </li>
+              <li>
+                Microsoft Deployment Toolkit (MDT) - remote OS installations
+              </li>
+              <li>Develop Python automation tools</li>
+            </ul>
+          </div>
+        </div>
+        <div className="future-plans">
+          <h3>Future Plans</h3>
+          <p className="paragraph">
+            <span>
+              My next goal is to become a full stack developer and a
+              data-scientist.{" "}
+            </span>
+            I am a highly motivated, easy & self-learner, team player, out of
+            the box thinking person, and love complex logic puzzles. I have been
+            starting to study the fields of Data-Science. I believe I will
+            continue my academic education pursuing my Master's Degree, and
+            become a Data-Scientist soon enough 😁.
+          </p>
+        </div>
       </div>
 
       <motion.button className="skills-btn">
@@ -71,6 +125,7 @@ const StyledAbout = styled.div`
   align-items: center;
   color: white;
   position: absolute;
+  padding-top: 3rem;
 
   img {
     margin-top: 1rem;
@@ -97,19 +152,25 @@ const StyledAbout = styled.div`
     padding-bottom: 1rem;
   }
 
-  .subtitle {
-    position: relative;
-    margin: 4rem auto;
-    text-align: center;
-    font-size: 1.8rem;
+  .title {
+    padding: 1rem;
+    font-size: 3.5rem;
     font-weight: lighter;
-    left: -5vh;
+  }
+
+  .subtitle {
+    font-size: 1.8rem;
+    font-weight: 300;
+    font-style: italic;
+    font-family: "Raleway", sans-serif;
+    position: relative;
+    margin-bottom: 3rem;
   }
 
   .subtitle > span {
+    position: absolute;
     display: block;
-    position: relative;
-    left: 10vh;
+    right: 0;
   }
 
   .my-story {
@@ -117,10 +178,13 @@ const StyledAbout = styled.div`
     top: -4rem;
     margin: 2rem auto 0rem auto;
     width: 100%;
-    padding: 0;
+    padding: 1rem;
   }
 
-  .my-story > p {
+  .future-plans > p,
+  .education > p,
+  .experience > p,
+  .military-service > p {
     padding: 0.1rem 0.4rem;
     text-align: center;
   }
@@ -134,17 +198,42 @@ const StyledAbout = styled.div`
 
   .paragraph {
     margin: 1.5rem 0.5rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-align: left !important;
+  }
+
+  .years {
+    margin: 1.5rem 0.5rem;
+    font-size: 0.8rem;
+    color: "#838383";
+    padding: 0;
+    display: inline;
+  }
+  .gpa {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+
+  .bullet-list {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    color: #ccc;
+  }
+  li {
+    padding: 0.2rem 0;
   }
 
   .paragraph > span {
     font-size: 1.3rem;
   }
 
+  @media (min-width: 512px) {
+    width: 100%;
+    padding: 2rem 4rem;
+  }
   @media (min-width: 768px) {
     width: 100%;
-    padding: 5rem 10rem;
+    padding: 5rem 8rem;
     align-items: start;
 
     img {
@@ -156,25 +245,48 @@ const StyledAbout = styled.div`
     }
 
     .intro {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       font-size: 2.5rem;
+      margin: 1rem auto;
       font-weight: normal;
     }
+    .title {
+      font-size: 5rem;
+    }
     .subtitle {
-      font-size: 3.1rem;
-      text-align: left;
-      margin: 1rem 0 3rem 0;
-      left: 5rem;
-      font-weight: lighter;
+      width: 70%;
+      font-size: 3.8rem;
     }
     .subtitle > span {
-      display: inline;
-      left: 0;
+      display: block;
     }
     .my-story {
-      margin: 3rem 0 1rem 0;
+      margin: 5rem 0 1rem 0;
     }
     .my-story > p {
       text-align: left;
+    }
+    .paragraph {
+      font-size: 1.3rem;
+    }
+    .paragraph > span {
+      font-size: 1.6rem;
+    }
+    .years {
+      display: block;
+      margin: 0;
+      padding: 0.5rem;
+      font-size: 1.1rem;
+      color: #9ee9cd;
+    }
+
+    .bullet-list {
+      font-size: 1.2rem;
+      padding: 0.5rem 3rem;
     }
   }
 `;

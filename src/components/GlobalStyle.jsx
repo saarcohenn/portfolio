@@ -32,6 +32,8 @@ h2 {
     font-size: 4rem;
 }
 h3 {
+    font-weight:lighter;
+    font-size: 2.5rem;
     color: white;
 }
 h4 {
