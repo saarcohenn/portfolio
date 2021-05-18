@@ -3,11 +3,10 @@ import profile from "../img/saar-profile.JPG";
 import Typical from "react-typical";
 import styled from "styled-components";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
 
 const About = () => {
   return (
-    <StyledAbout>
+    <StyledAbout id="about-section">
       <motion.img src={profile} alt="profile" whileHover={{ scale: 1.1 }} />
       <div className="intro">
         <h1 className="title">Hi there 👋🏻,</h1>
@@ -34,9 +33,10 @@ const About = () => {
             ]}
           />
         </p>
+
         <div className="experience">
           <h3>Experience</h3>
-          <p className="paragraph">
+          <div className="paragraph">
             <span>Chip Validation Engineer at Marvell Inc. </span>
             <p className="years">Jul 2019 - Dec 2020</p>
             <ul className="bullet-list">
@@ -51,7 +51,7 @@ const About = () => {
               <li>REST API, TCP/IP & Web-Sockets</li>
               <li>SSH, Telnet & Serial-Connection</li>
             </ul>
-          </p>
+          </div>
         </div>
         <div className="education">
           <h3>Education</h3>
@@ -110,10 +110,6 @@ const About = () => {
           </p>
         </div>
       </div>
-
-      <motion.button className="skills-btn">
-        <Link to="/portfolio/Skills">Continue To Skills {"->"}</Link>
-      </motion.button>
     </StyledAbout>
   );
 };
@@ -124,8 +120,8 @@ const StyledAbout = styled.div`
   justify-content: center;
   align-items: center;
   color: white;
-  position: absolute;
-  padding-top: 3rem;
+  padding-top: 2rem;
+  margin-top: 4rem;
 
   img {
     margin-top: 1rem;

@@ -1,14 +1,12 @@
 import React from "react";
 import styled from "styled-components";
-import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
 import { skills } from "./Constant";
 import Skill from "./Skill";
 
 const Skills = () => {
   return (
-    <StyledSkills>
-      <h1>Check out my skills:</h1>
+    <StyledSkills id="skills-section">
+      <h3>Check out my skills:</h3>
       <div className="skill-list">
         {skills &&
           skills.map((skill) => (
@@ -20,14 +18,6 @@ const Skills = () => {
               key={skill.id}
             />
           ))}
-      </div>
-      <div className="buttons">
-        <motion.button className="about-btn">
-          <Link to="/portfolio/"> {"<-"} Back To My Story</Link>
-        </motion.button>
-        <motion.button className="projects-btn">
-          <Link to="/portfolio/projects">Continue To My Projects {"->"}</Link>
-        </motion.button>
       </div>
     </StyledSkills>
   );
@@ -41,17 +31,16 @@ const StyledSkills = styled.div`
   color: white;
   padding: 0rem 1rem;
   height: 100%;
+
   .skill-list {
     width: 100%;
     padding: 0 auto;
     justify-content: center;
   }
 
-  h1 {
-    font-family: "Open Sans", sans-serif;
-    font-size: 1.8rem;
-    font-weight: 300;
-    padding-bottom: 1rem;
+  h3 {
+    font-size: 2.2rem;
+    padding-bottom: 3rem;
   }
   a {
     text-decoration: none;

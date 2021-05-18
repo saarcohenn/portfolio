@@ -1,5 +1,6 @@
 import "./App.css";
 import { Switch, Route, useLocation } from "react-router-dom";
+import styled from "styled-components";
 
 // Components
 import About from "./components/About";
@@ -12,30 +13,25 @@ import GlobalStyle from "./components/GlobalStyle";
 function App() {
   const location = useLocation();
   return (
-    <div className="App">
-      {/* Nav */}
+    <Main>
       <GlobalStyle />
       <Nav />
+
       <Switch location={location} key={location.pathname}>
-        {/* About */}
         <Route exact path="/portfolio/">
           <About />
-        </Route>
-        {/* Projects */}
-        <Route exact path="/portfolio/projects">
-          <Projects />
-        </Route>
-        {/* Skills */}
-        <Route exact path="/portfolio/skills">
           <Skills />
-        </Route>
-        {/* Footer */}
-        <Route exact path="/portfolio/footer">
+          <Projects />
           <Footer />
         </Route>
       </Switch>
-    </div>
+    </Main>
   );
 }
+
+const Main = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
 
 export default App;

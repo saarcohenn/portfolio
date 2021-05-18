@@ -3,25 +3,19 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 import { projects } from "./Constant";
 import Project from "./Project";
-import { Link } from "react-router-dom";
 
 const Projects = () => {
   return (
-    <StyledProjects>
+    <StyledProjects id="projects-section">
       <div className="intro">
-        <h2>And here are some</h2>
-        <span>Of my awesome projects:</span>
+        <h3>And here are some</h3>
+        <span>of my projects:</span>
       </div>
       <div className="projects-container">
         {projects &&
           projects.map((project) => (
             <Project className="project" project={project} key={project.id} />
           ))}
-      </div>
-      <div className="buttons">
-        <motion.button className="about-btn">
-          <Link to="/portfolio/">{"<-"}Back To My Story</Link>
-        </motion.button>
       </div>
     </StyledProjects>
   );
@@ -36,34 +30,26 @@ const StyledProjects = styled(motion.div)`
   padding: 0rem 1rem;
 
   .intro {
+    margin: 6rem auto 0 auto;
     font-weight: 200;
     position: relative;
+    text-align: center;
     width: 100%;
   }
 
-  .intro > h2 {
-    font-size: 1.8rem;
-    padding: 0 1rem;
+  .intro > h3 {
+    font-size: 2.2rem;
   }
 
   .intro > span {
-    position: absolute;
-    font-size: 1.5rem;
-    right: 0;
+    font-size: 2rem;
+    font-weight: 300;
     padding: 0.5rem 1rem;
+    text-align: center;
   }
 
   .projects-container {
     margin-top: 2rem;
-  }
-
-  .buttons {
-    color: white;
-    margin-top: 2rem;
-    margin-bottom: 4rem;
-    padding: 1rem;
-    text-align: center;
-    align-items: center;
   }
 
   a {
