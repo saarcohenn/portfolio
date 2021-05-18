@@ -62,9 +62,9 @@ const StyledSkills = styled.div`
   @media (min-width: 768px) {
     align-items: center;
     justify-content: center;
-    h1 {
+    h3 {
       margin-top: 2rem;
-      font-size: 2rem;
+      font-size: 3.5rem;
       font-family: "Inter", sans-serif;
     }
 

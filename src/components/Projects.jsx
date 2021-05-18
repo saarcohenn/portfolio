@@ -73,9 +73,8 @@ const StyledProjects = styled(motion.div)`
   }
 
   @media (min-width: 768px) {
-    .intro > h2 {
-      text-align: left;
-      font-size: 3.1rem;
+    .intro > h3 {
+      font-size: 3.5rem;
       padding: 1rem 2rem;
     }
 
