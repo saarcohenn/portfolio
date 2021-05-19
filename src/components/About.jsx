@@ -24,7 +24,7 @@ const About = () => {
             steps={[
               "Fullstack Developer",
               2000,
-              "Salsa Dancer",
+              "Salsa Instructor",
               2000,
               "Scooba Diver",
               2000,
@@ -47,7 +47,7 @@ const About = () => {
               <li>Writing test plans</li>
               <li>Writing Python and Linux Bash automated tests.</li>
               <li>Methodological, Organized Person & Out-Of-The-Box Thinker</li>
-              <li>Deep knowlege in the fields of Networking</li>
+              <li>Deep knowledge in the fields of Networking</li>
               <li>REST API, TCP/IP & Web-Sockets</li>
               <li>SSH, Telnet & Serial-Connection</li>
             </ul>
@@ -69,7 +69,7 @@ const About = () => {
                 with C#
               </li>
               <li>Program languages: C, C++, C#, Java and JavaScript</li>
-              <li>Courses: Algoritms, Data Structure, Graph Theory, SQL</li>
+              <li>Courses: Algorithms, Data Structures, Graph Theory, SQL</li>
             </ul>
           </div>
         </div>
