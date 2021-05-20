@@ -29,7 +29,7 @@ const StyledSkills = styled.div`
   justify-content: center;
   align-items: center;
   color: white;
-  padding: 0rem 1rem;
+  padding: 6rem 1rem 0 1rem;
   height: 100%;
 
   .skill-list {
