@@ -73,6 +73,7 @@ const StyledProjects = styled(motion.div)`
   }
 
   @media (min-width: 768px) {
+    padding-top: 2rem;
     .intro > h3 {
       font-size: 3.5rem;
       padding: 1rem 2rem;

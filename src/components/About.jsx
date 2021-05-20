@@ -235,6 +235,7 @@ const StyledAbout = styled.div`
     width: 100%;
     padding: 5rem 8rem 0rem 8rem;
     align-items: start;
+    margin-bottom: 0;
 
     img {
       margin: 0 auto;

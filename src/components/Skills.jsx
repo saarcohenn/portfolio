@@ -29,7 +29,7 @@ const StyledSkills = styled.div`
   justify-content: center;
   align-items: center;
   color: white;
-  padding: 0rem 1rem;
+  padding: 5rem 1rem 0 1rem;
   height: 100%;
 
   .skill-list {
@@ -48,9 +48,10 @@ const StyledSkills = styled.div`
     align-items: center;
     justify-content: center;
     margin: 0 auto;
+    padding-top: 2rem;
     h3 {
       margin-top: 2rem;
-      font-size: 3.5rem;
+      font-size: 4rem;
       font-family: "Inter", sans-serif;
     }
 
