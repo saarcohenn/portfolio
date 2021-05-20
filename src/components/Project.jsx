@@ -83,10 +83,6 @@ const StyledProject = styled(motion.div)`
       font-size: 1.4rem;
       font-weight: lighter;
     }
-    :hover {
-      border-radius: 2rem;
-      background-color: #4a84ff;
-    }
   }
 
   @media (min-width: 768px) {
