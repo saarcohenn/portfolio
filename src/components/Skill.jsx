@@ -5,16 +5,13 @@ import { Icon } from "./Icon";
 
 const Skill = ({ color, name, exp, className }) => {
   return (
-    <StyledSkill className={className} whileHover={{ height: "100px" }}>
-      {/* <p style={{ fill: "red", height: "2rem" }}>
-        <icon />{" "}
-      </p> */}
+    <StyledSkill className={className}>
       <div className="icon-container">
         <Icon name={name} color={color} size="2.1em" />
       </div>
       <div className="text-container">
         <p className="name">{name}</p>
-        <p className="exp">{exp} years of experience</p>
+        <p className="exp">{exp} years of exp</p>
       </div>
     </StyledSkill>
   );
@@ -44,6 +41,9 @@ const StyledSkill = styled(motion.div)`
   }
   .exp {
     font-size: 1rem;
+  }
+  @media (min-width: 768px) {
+    width: 80%;
   }
 `;
 

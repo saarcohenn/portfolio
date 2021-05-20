@@ -15,33 +15,33 @@ import waves4 from "../img/waves-4.png";
 export const skills = [
   {
     id: 1,
-    color: "#F4DC1E",
-    name: "JavaScript",
-    exp: 3,
-  },
-  {
-    id: 2,
-    color: "#62DAF9",
-    name: "ReactJS",
-    exp: 2,
-  },
-  {
-    id: 3,
     color: "#E5622A",
     name: "HTML5",
     exp: 5,
   },
   {
-    id: 4,
+    id: 2,
     color: "#159ED9",
     name: "CSS3",
     exp: 5,
   },
   {
+    id: 3,
+    color: "#EA4C27",
+    name: "Git",
+    exp: 3,
+  },
+  {
+    id: 4,
+    color: "#F4DC1E",
+    name: "JavaScript",
+    exp: 3,
+  },
+  {
     id: 5,
-    color: "#1b7455",
-    name: "Django",
-    exp: 1,
+    color: "#62DAF9",
+    name: "ReactJS",
+    exp: 2,
   },
   {
     id: 6,
@@ -51,30 +51,39 @@ export const skills = [
   },
   {
     id: 7,
+    color: "#1b7455",
+    name: "Django",
+    exp: 1,
+  },
+  {
+    id: 8,
+    color: "#EA4C27",
+    name: "NodeJS",
+    exp: 1,
+  },
+  {
+    id: 9,
     color: "#8CC366",
     name: "MongoDB",
     exp: 0.5,
   },
   {
-    id: 8,
-    color: "#EA4C27",
-    name: "Git",
-    exp: 3,
+    id: 10,
+    color: "#c2463d",
+    name: "MSSQL",
+    exp: 0.5,
+  },
+  {
+    id: 11,
+    color: "#e35747",
+    name: "Jenkins",
+    exp: 0.5,
   },
 ];
 
 export const projects = [
   {
     id: 1,
-    name: "Sudoku",
-    description:
-      "The classic sudoku game. Made for my own fun, and uses 3 different boards with 3 different difficulties.",
-    tech: ["HTML5", "CSS3", "JavaScript"],
-    photos: [sudoku1, sudoku2, sudoku3, sudoku4],
-    url: "https://sc-sudoku.netlify.app/",
-  },
-  {
-    id: 2,
     name: "Budget-Tracker",
     description:
       "Awesome and easy-to-use budget tracker app. This app was created in order to track my expenses, and then modified to track my incomes against my expenses. This app contains can use voice commands.",
@@ -83,12 +92,21 @@ export const projects = [
     url: "https://sc-budget-tracker.netlify.app/",
   },
   {
-    id: 3,
+    id: 2,
     name: "Waves - Music App",
     description:
       "Chill music app for developers, powered by Chillhop Music. I enjoy it from time to time, and use it to concentrate as I work on my own projects.",
     tech: ["HTML5", "CSS3", "ReactJS", "Framer Motion"],
     photos: [waves1, waves2, waves3, waves4],
     url: "https://sc-music-player-chillhop.netlify.app/",
+  },
+  {
+    id: 3,
+    name: "Sudoku",
+    description:
+      "The classic sudoku game. Made for my own fun, and uses 3 different boards with 3 different difficulties.",
+    tech: ["HTML5", "CSS3", "JavaScript"],
+    photos: [sudoku1, sudoku2, sudoku3, sudoku4],
+    url: "https://sc-sudoku.netlify.app/",
   },
 ];

@@ -57,9 +57,10 @@ const About = () => {
           <h3>Education</h3>
           <div className="paragraph">
             <span>
-              B.Sc. in Computer Science - Holon Institute of Technologies
+              Bachelor of Computer Science, Holon Institute of Technologies,
+              Holon
             </span>
-            <p className="years">2016-2019</p>
+            <p className="years">Oct 2016 - Oct 2019</p>
             <p className="gpa">
               Graduated with <span>GPA: 90</span>
             </p>
@@ -68,8 +69,11 @@ const About = () => {
                 Developed .Net Framwork, Entity Framework & WPF apps and games
                 with C#
               </li>
-              <li>Program languages: C, C++, C#, Java and JavaScript</li>
-              <li>Courses: Algorithms, Data Structures, Graph Theory, SQL</li>
+              <li>Languages & Tools: C, C++, C#, Java, and JavaScript, SQL</li>
+              <li>
+                Courses: Algorithms, Data Structures, Graph Theory, Design
+                Patterns
+              </li>
             </ul>
           </div>
         </div>
@@ -86,7 +90,7 @@ const About = () => {
               <li>
                 Collaborate with participants to determine project timeline
               </li>
-              <li>In charge of team's tasks, work-plans, and training</li>
+              <li>In charge of team's tasks, work plans, and training</li>
               <li>Cisco's Call Manager & UCCX Platform </li>
               <li>
                 Microsoft Deployment Toolkit (MDT) - remote OS installations
@@ -229,7 +233,7 @@ const StyledAbout = styled.div`
   }
   @media (min-width: 768px) {
     width: 100%;
-    padding: 5rem 8rem;
+    padding: 5rem 8rem 0rem 8rem;
     align-items: start;
 
     img {
