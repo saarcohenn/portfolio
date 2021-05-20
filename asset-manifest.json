@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.52ce963c.chunk.css",
-    "main.js": "/portfolio/static/js/main.c8374958.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.c8374958.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.3bc49e91.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.3bc49e91.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.98fdf70e.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.98fdf70e.js.map",
     "static/js/2.47798b03.chunk.js": "/portfolio/static/js/2.47798b03.chunk.js",
@@ -18,15 +18,16 @@
     "static/media/budget-4.1cda3304.png": "/portfolio/static/media/budget-4.1cda3304.png",
     "static/media/framermotion_icon.758dfa94.png": "/portfolio/static/media/framermotion_icon.758dfa94.png",
     "static/media/jenkins_icon.1a7f868e.png": "/portfolio/static/media/jenkins_icon.1a7f868e.png",
+    "static/media/jira_icon.fc367bdf.png": "/portfolio/static/media/jira_icon.fc367bdf.png",
     "static/media/mssql_icon.77db0f17.png": "/portfolio/static/media/mssql_icon.77db0f17.png",
     "static/media/nodejs_icon.3e53bd66.png": "/portfolio/static/media/nodejs_icon.3e53bd66.png",
     "static/media/python_icon.91072be8.png": "/portfolio/static/media/python_icon.91072be8.png",
     "static/media/saar-profile.4bbb960b.JPG": "/portfolio/static/media/saar-profile.4bbb960b.JPG",
     "static/media/speechly_icon.a6a15cf6.png": "/portfolio/static/media/speechly_icon.a6a15cf6.png",
-    "static/media/sudoku-1.44f230c7.png": "/portfolio/static/media/sudoku-1.44f230c7.png",
-    "static/media/sudoku-2.bddca235.png": "/portfolio/static/media/sudoku-2.bddca235.png",
-    "static/media/sudoku-3.9e343771.png": "/portfolio/static/media/sudoku-3.9e343771.png",
-    "static/media/sudoku-4.11ba310b.png": "/portfolio/static/media/sudoku-4.11ba310b.png",
+    "static/media/sudoku-1.7fe4b282.png": "/portfolio/static/media/sudoku-1.7fe4b282.png",
+    "static/media/sudoku-2.4875b055.png": "/portfolio/static/media/sudoku-2.4875b055.png",
+    "static/media/sudoku-3.e70c3710.png": "/portfolio/static/media/sudoku-3.e70c3710.png",
+    "static/media/sudoku-4.d60587c1.png": "/portfolio/static/media/sudoku-4.d60587c1.png",
     "static/media/waves-1.2824b14d.png": "/portfolio/static/media/waves-1.2824b14d.png",
     "static/media/waves-2.b422d69d.png": "/portfolio/static/media/waves-2.b422d69d.png",
     "static/media/waves-3.7f8b40ab.png": "/portfolio/static/media/waves-3.7f8b40ab.png",
@@ -36,6 +37,6 @@
     "static/js/runtime-main.98fdf70e.js",
     "static/js/2.47798b03.chunk.js",
     "static/css/main.52ce963c.chunk.css",
-    "static/js/main.c8374958.chunk.js"
+    "static/js/main.3bc49e91.chunk.js"
   ]
 }
