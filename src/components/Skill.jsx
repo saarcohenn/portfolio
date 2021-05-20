@@ -7,7 +7,7 @@ const Skill = ({ color, name, exp, className }) => {
   return (
     <StyledSkill className={className}>
       <div className="icon-container">
-        <Icon name={name} color={color} size="2.1em" />
+        <Icon classname="icon" name={name} color={color} size="2.1em" />
       </div>
       <div className="text-container">
         <p className="name">{name}</p>
@@ -25,7 +25,8 @@ const StyledSkill = styled(motion.div)`
   max-width: 90%;
   margin: 0 auto;
   justify-content: center;
-  border-bottom: 1px solid #23d997;
+  border-bottom: 2px solid #23d997;
+  border-radius: 50%;
 
   .icon-container {
     margin-right: 2rem;
@@ -34,8 +35,10 @@ const StyledSkill = styled(motion.div)`
     margin: 0;
     padding: 0;
   }
+
   .name {
-    font-size: 1.2rem;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.5rem;
     font-weight: bold;
     color: white;
   }
@@ -44,6 +47,14 @@ const StyledSkill = styled(motion.div)`
   }
   @media (min-width: 768px) {
     width: 80%;
+    .name {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: white;
+    }
+    .exp {
+      font-size: 1.3rem;
+    }
   }
 `;
 

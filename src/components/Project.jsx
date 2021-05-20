@@ -35,9 +35,9 @@ const Project = ({ project }) => {
             }
           })}
       </div>
-      <motion.button className="visit-site">
-        <a href={project.url}>Check it out{"->"}</a>
-      </motion.button>
+      <a href={project.url} className="visit-site">
+        Check it out{"->"}
+      </a>
     </StyledProject>
   );
 };
@@ -71,6 +71,9 @@ const StyledProject = styled(motion.div)`
     margin-bottom: 1.5rem;
   }
   .visit-site {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.3rem;
     width: 60%;
     margin: 1rem auto 1.5rem auto;
     border: 4px solid #4a84ff;
@@ -94,6 +97,16 @@ const StyledProject = styled(motion.div)`
     .description {
       height: 10rem;
       padding: 1rem;
+    }
+    a {
+      font-size: 1.4rem;
+      font-weight: lighter;
+      transition: border-radius 0.1s ease-out;
+    }
+    a:hover {
+      border-radius: 2rem;
+      background-color: #4a84ff;
+      transition: border-radius 0.1s ease-out;
     }
   }
 `;

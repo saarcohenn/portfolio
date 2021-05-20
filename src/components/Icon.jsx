@@ -6,6 +6,7 @@ import NodeJS from "../icons/nodejs_icon.png";
 import Jenkins from "../icons/jenkins_icon.png";
 import Python from "../icons/python_icon.png";
 import MSsql from "../icons/mssql_icon.png";
+import Jira from "../icons/jira_icon.png";
 
 import React from "react";
 
@@ -36,6 +37,10 @@ const Icon = ({ name, color, size }) => {
     case "Speechly":
       return (
         <img src={Speechly} alt={name} style={{ height: size, width: size }} />
+      );
+    case "Jira":
+      return (
+        <img src={Jira} alt={name} style={{ height: size, width: size }} />
       );
     case "NodeJS":
       return (

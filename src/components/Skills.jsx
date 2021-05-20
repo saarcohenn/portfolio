@@ -29,7 +29,7 @@ const StyledSkills = styled.div`
   justify-content: center;
   align-items: center;
   color: white;
-  padding: 5rem 1rem 0 1rem;
+  padding: 0rem 1rem;
   height: 100%;
 
   .skill-list {
@@ -48,10 +48,10 @@ const StyledSkills = styled.div`
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    padding-top: 2rem;
+    padding-top: 3rem;
     h3 {
       margin-top: 2rem;
-      font-size: 4rem;
+      font-size: 3.5rem;
       font-family: "Inter", sans-serif;
     }
 
@@ -60,6 +60,11 @@ const StyledSkills = styled.div`
       grid-template-columns: repeat(2, 1fr);
       width: 100%;
       margin-bottom: 5rem;
+    }
+  }
+  @media (min-width: 1300px) {
+    .skill-list {
+      grid-template-columns: repeat(3, 1fr);
     }
   }
 `;
