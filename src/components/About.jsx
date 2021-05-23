@@ -9,14 +9,14 @@ const About = () => {
     <StyledAbout id="about-section">
       <motion.img src={profile} alt="profile" whileHover={{ scale: 1.1 }} />
       <div className="intro">
-        <h1 className="title">Hi there 👋🏻,</h1>
+        <h1 className="title">Hi there 👋🏻</h1>
         <h2 className="subtitle">
           Let Me Tell You <span>About Myself...</span>
         </h2>
       </div>
       <div className="my-story">
-        <p className="first">
-          My name is Saar Cohen. I am a <br />
+        <div className="first">
+          <p>My name is Saar Cohen. I am a </p>
           <Typical
             className="typical"
             loop={Infinity}
@@ -32,7 +32,7 @@ const About = () => {
               2000,
             ]}
           />
-        </p>
+        </div>
 
         <div className="experience">
           <h3>Experience</h3>
@@ -69,9 +69,9 @@ const About = () => {
                 Developed .Net Framwork, Entity Framework & WPF apps and games
                 with C#
               </li>
-              <li>Languages & Tools: C, C++, C#, Java, and JavaScript, SQL</li>
+              <li>Languages & Tools: C, C++, C#, Java, JavaScript and SQL</li>
               <li>
-                Courses: Algorithms, Data Structures, Graph Theory, Design
+                Courses: Algorithms, Data Structures, Graph Theory and Design
                 Patterns
               </li>
             </ul>
@@ -188,8 +188,14 @@ const StyledAbout = styled.div`
     padding: 0.1rem 0.4rem;
     text-align: center;
   }
-
+  .first {
+    padding: 3rem 0;
+  }
+  .first > p {
+    padding: 0.2rem 0;
+  }
   .typical {
+    font-size: 1.4rem;
     background-color: #23d997;
     color: black;
     padding-left: 0.2rem;

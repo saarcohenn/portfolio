@@ -64,7 +64,7 @@ const StyledSkills = styled.div`
   }
   @media (min-width: 1300px) {
     .skill-list {
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr);
     }
   }
 `;
