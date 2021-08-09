@@ -1,5 +1,14 @@
 import { FaHtml5, FaCss3Alt, FaGit } from "react-icons/fa";
-import { SiJavascript, SiReact, SiDjango, SiMongodb } from "react-icons/si";
+import {
+  SiJavascript,
+  SiReact,
+  SiDjango,
+  SiMongodb,
+  SiFlask,
+  SiDocker,
+  SiGithub,
+  SiNextDotJs,
+} from "react-icons/si";
 import Speechly from "../icons/speechly_icon.png";
 import FramerMotion from "../icons/framermotion_icon.png";
 import NodeJS from "../icons/nodejs_icon.png";
@@ -28,8 +37,16 @@ const Icon = ({ name, color, size }) => {
       );
     case "Django":
       return <SiDjango style={{ color: color }} size={size} />;
+    case "Flask":
+      return <SiFlask style={{ color: color }} size={size} />;
     case "MongoDB":
       return <SiMongodb style={{ color: color }} size={size} />;
+    case "Docker":
+      return <SiDocker style={{ color: color }} size={size} />;
+    case "Next.JS":
+      return <SiNextDotJs style={{ color: color }} size={size} />;
+    case "GitHub":
+      return <SiGithub style={{ color: color }} size={size} />;
     case "MSSQL":
       return (
         <img src={MSsql} alt={name} style={{ height: size, width: size }} />

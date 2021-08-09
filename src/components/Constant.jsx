@@ -26,34 +26,46 @@ export const skills = [
     exp: 5,
   },
   {
-    id: 3,
-    color: "#EA4C27",
-    name: "Git",
-    exp: 3,
-  },
-  {
     id: 4,
     color: "#F4DC1E",
     name: "JavaScript",
     exp: 3,
   },
   {
-    id: 5,
-    color: "#62DAF9",
-    name: "ReactJS",
-    exp: 2,
-  },
-  {
     id: 6,
     color: "#39cb6f",
     name: "Python",
-    exp: 2,
+    exp: 3,
   },
   {
-    id: 7,
-    color: "#2484FE",
-    name: "Jira",
-    exp: 2,
+    id: 5,
+    color: "#62DAF9",
+    name: "ReactJS",
+    exp: 3,
+  },
+  {
+    id: 9,
+    color: "#EA4C27",
+    name: "NodeJS",
+    exp: 3,
+  },
+  {
+    id: 3,
+    color: "#EA4C27",
+    name: "Git",
+    exp: 4,
+  },
+  {
+    id: 16,
+    color: "#ffffff",
+    name: "GitHub",
+    exp: 4,
+  },
+  {
+    id: 15,
+    color: "#ffffff",
+    name: "Next.JS",
+    exp: 0.5,
   },
   {
     id: 8,
@@ -62,10 +74,16 @@ export const skills = [
     exp: 1,
   },
   {
-    id: 9,
-    color: "#EA4C27",
-    name: "NodeJS",
-    exp: 1,
+    id: 12,
+    color: "#ffffff",
+    name: "Flask",
+    exp: 0.5,
+  },
+  {
+    id: 14,
+    color: "#2491E6",
+    name: "Docker",
+    exp: 0.5,
   },
   {
     id: 10,
@@ -79,8 +97,16 @@ export const skills = [
     name: "MSSQL",
     exp: 0.5,
   },
+
   {
-    id: 12,
+    id: 7,
+    color: "#2484FE",
+    name: "Jira",
+    exp: 2,
+  },
+
+  {
+    id: 13,
     color: "#e35747",
     name: "Jenkins",
     exp: 0.5,

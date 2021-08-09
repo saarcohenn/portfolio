@@ -130,8 +130,7 @@ const About = () => {
           <h3>Future Plans</h3>
           <p className="paragraph">
             <span>
-              My next goal is to become a full stack developer and a
-              data-scientist.{" "}
+              My next goal is to jump start as a Fullstack Developer.{" "}
             </span>
             I am a highly motivated, easy & self-learner, team player, out of
             the box thinker, and a person that loves to solve complex logic
