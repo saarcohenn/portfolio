@@ -56,9 +56,36 @@ const About = () => {
         <div className="education">
           <h3>Education</h3>
           <div className="paragraph">
+            <div className="paragraph">
+              <span>
+                Extreme Python Bootcamp - Data Science Proficiency, John Bryce
+              </span>
+              <p className="years">May 2021 - Jul 2021</p>
+              <ul className="bullet-list">
+                <li>
+                  Practical usage of Data Modeling using Machine Learning and
+                  Deep Learning
+                </li>
+                <li>
+                  Data Visualization with Backend Development using Flask.
+                </li>
+                <li>Use Data Analysis methods</li>
+                <li>
+                  Problems sorting into Classification, Regression, and
+                  Clustering problems
+                </li>
+                <li>
+                  Libraries: NumPy, pandas, seaborn, matplotlib, sci-kit learn,
+                  Keras
+                </li>
+                <li>
+                  Technologies: Jupyter Notebook, Google Colab, Docker,
+                  Microsoft Azure, and Flask microframework for web development.
+                </li>
+              </ul>
+            </div>
             <span>
-              Bachelor of Computer Science, Holon Institute of Technologies,
-              Holon
+              Bachelor of Computer Science, Holon Institute of Technologies
             </span>
             <p className="years">Oct 2016 - Oct 2019</p>
             <p className="gpa">
@@ -107,10 +134,12 @@ const About = () => {
               data-scientist.{" "}
             </span>
             I am a highly motivated, easy & self-learner, team player, out of
-            the box thinking person, and love complex logic puzzles. I have been
-            starting to study the fields of Data-Science. I believe I will
-            continue my academic education pursuing my Master's Degree, and
-            become a Data-Scientist soon enough 😁.
+            the box thinker, and a person that loves to solve complex logic
+            puzzles. I am a <strong>Fullstack Developer </strong> with the
+            knowledge of multiple fields. These days I have started to study the
+            fields of Data-Science. I believe I will continue my academic
+            education pursuing my Master's Degree, and become a Data-Scientist
+            soon 😁.
           </p>
         </div>
       </div>
