@@ -9,7 +9,7 @@ const About = () => {
     <StyledAbout id="about-section">
       <motion.img src={profile} alt="profile" whileHover={{ scale: 1.1 }} />
       <div className="intro">
-        <h1 className="title">Hi there 👋🏻</h1>
+        <h1 className="title">Hi There</h1>
         <h2 className="subtitle">
           Let Me Tell You <span>About Myself...</span>
         </h2>
@@ -37,17 +37,25 @@ const About = () => {
         <div className="experience">
           <h3>Experience</h3>
           <div className="paragraph">
-            <span>Chip Validation Engineer at Marvell Inc. </span>
+            <span>Python Developer at Marvell LTD. </span>
             <p className="years">Jul 2019 - Dec 2020</p>
+            <p className="summary">
+              I have developed management and testing systems based on
+              communication products, OOP oriented, and have handled Secure Boot
+              feature on SoC level and Traffic Mirroring on Full Board level.
+              <br />
+              Working with Waterfall and Agile-Scrum methodologies.
+            </p>
             <ul className="bullet-list">
+              <li>2 years of Python and Bash development experience.</li>
               <li>
-                Designed and developed engineering studies of Marvell
-                Documentation and Products
+                Design more functional, cohesive codes to enhance product
+                performance.
               </li>
-              <li>Writing test plans</li>
-              <li>Writing Python and Linux Bash automated tests.</li>
-              <li>Methodological, Organized Person & Out-Of-The-Box Thinker</li>
-              <li>Deep knowledge in the fields of Networking</li>
+              <li>
+                Writingprofessionaldocumentationandcreatingunittestsand full
+                flow tests.
+              </li>
               <li>REST API, TCP/IP & Web-Sockets</li>
               <li>SSH, Telnet & Serial-Connection</li>
             </ul>
@@ -128,7 +136,7 @@ const About = () => {
         </div>
         <div className="future-plans">
           <h3>Future Plans</h3>
-          <p className="paragraph">
+          <p className="paragraph p-futurePlans">
             <span>
               My next goal is to jump start as a Fullstack Developer.{" "}
             </span>
@@ -171,6 +179,12 @@ const StyledAbout = styled.div`
   a {
     text-decoration: none;
     color: white;
+  }
+
+  .summary {
+    margin: 0;
+    padding: 1rem 0.5rem;
+    font-size: 1.2rem;
   }
 
   .intro {
@@ -271,6 +285,10 @@ const StyledAbout = styled.div`
     align-items: start;
     margin-bottom: 0;
 
+    .summary {
+      width: 75%;
+    }
+
     img {
       margin: 0 auto;
       max-width: 30rem;
@@ -322,6 +340,11 @@ const StyledAbout = styled.div`
     .bullet-list {
       font-size: 1.2rem;
       padding: 0.5rem 3rem;
+      width: 75%;
+    }
+
+    .p-futurePlans {
+      width: 75%;
     }
   }
 `;
