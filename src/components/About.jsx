@@ -53,8 +53,8 @@ const About = () => {
                 performance.
               </li>
               <li>
-                Writingprofessionaldocumentationandcreatingunittestsand full
-                flow tests.
+                Writing professional documentation and creating unit tests and
+                full flow tests.
               </li>
               <li>REST API, TCP/IP & Web-Sockets</li>
               <li>SSH, Telnet & Serial-Connection</li>
