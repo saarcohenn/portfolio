@@ -7,6 +7,11 @@ I will continue update it and add my new work as long as I can.
 
 ## Available Scripts
 
+### `yarn`
+
+To initialize the to install all the dependencies, you need to run `yarn`
+Install yarn using Homebrew incase you use MacOS, Or read about it in the official Yarn [Website](https://yarnpkg.com/)
+
 ### `yarn start`
 
 Runs the app in the development mode.
